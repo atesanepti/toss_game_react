@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply w-full h-screen flex items-center justify-center bg-dark text-slate-200;
+}
+#container {
+  @apply bg-[#222f3e] p-2 rounded-lg w-[300px] md:w-[400px];
+}
+#app_header {
+  @apply flex gap-2 bg-slate-700 p-2 rounded;
+}
+#dev_label {
+  @apply text-sm block text-center text-slate-300;
+}
+#result_area {
+  @apply text-center pt-4;
+}
+#select_btn{
+  @apply flex justify-center gap-12 py-8;
+}
+.navigate {
+  @apply px-4 py-1 rounded hover:text-slate-300;
+}
+.navigate.active {
+  @apply bg-slate-800;
+}
+.title {
+  @apply text-center my-10 text-2xl;
+}
+
+.btn {
+  transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  @apply px-6 py-1 rounded-lg cursor-pointer;
+}
+
+.btn.head {
+  border-bottom: 1px solid #3af7d7;
+  border-left: 1px solid #3af7d7;
+  color: #3af7d7;
+}
+.btn.head:hover {
+  box-shadow: 0 0 20px #05ffd538;
+}
+.btn.tell {
+  border-bottom: 1px solid #10bafd;
+  border-left: 1px solid #10bafd;
+  color: #10bafd;
+}
+.btn.tell:hover {
+  box-shadow: 0 0 20px #00b7ff49;
+}
+.poiner {
+  @apply w-[100px] h-[100px] bg-slate-700 flex items-center justify-center mx-auto rounded-full text-xl font-bold uppercase;
+}
+.poiner.head {
+  color: #3af7d7;
+}
+.poiner.tell {
+  color: #10bafd;
+}
+
+
+#header_game{
+  @apply flex justify-between my-3
+}
+#reset_btn{
+  @apply bg-slate-500 w-[30px] h-[30px] rounded-full grid place-items-center
+}
+
+
+#lavel_outer{
+  @apply flex justify-center gap-3 py-8
+}
+#lavel_outer > div{
+  @apply w-[40px] h-[40px] bg-slate-500 rounded-full p-2 grid place-items-center
+}
+
+
+#win_mark{
+  @apply bg-green-600 w-full h-full text-white  rounded-full
+}
+#lost_mark{
+  @apply bg-red-600 w-full h-full text-white  rounded-full
+
+}
+#title_luck{
+  @apply text-xl font-semibold text-slate-400
+}
+
+#message{
+  @apply text-center block text-sm font-mono
+}
